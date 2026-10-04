@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+</head>
+
+<body>
+
+    <h1>Student Management System</h1>
+
+    <input type="text" id="name" placeholder="Enter name">
+
+    <input type="number" id="age" placeholder="Enter age">
+
+    <input type="text" id="course" placeholder="Enter course">
+
+    <input type="email" id="email" placeholder="Enter email">
+
+    <button id="addBtn">Add Student</button>
+
+    <h2>Students</h2>
+
+    <ul id="studentList"></ul>
+
+
+    <script>
+
+        let nameInput = document.querySelector("#name");
+        let ageInput = document.querySelector("#age");
+        let courseInput = document.querySelector("#course");
+        let emailInput = document.querySelector("#email");
+
+        let addBtn = document.querySelector("#addBtn");
+        let studentList = document.querySelector("#studentList");
+
+
+        addBtn.addEventListener("click", function() {
+
+            let name = nameInput.value;
+            let age = ageInput.value;
+            let course = courseInput.value;
+            let email = emailInput.value;
+
+            console.log(name);
+            console.log(age);
+            console.log(course);
+            console.log(email);
+
+        });
+
+    </script>
+
+</body>
+</html>
